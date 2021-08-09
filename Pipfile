@@ -4,6 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+slack-sdk = "*"
+flask = "~=1.1.2"
 
 [dev-packages]
 black = "*"
