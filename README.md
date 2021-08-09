@@ -1,10 +1,12 @@
 # backlog-to-slack-notification
 ## About
-Notification script from backlog to slack
-Convert backlog mentions to slack mentions
+Notification script from backlog to slack.
 
-Backlogの通知をSlackへ送る
-BacklogのメンションをSlackのメンションへ変換
+Convert backlog mentions to slack mentions.
+
+Backlogの通知をSlackへ送る。
+
+BacklogのメンションをSlackのメンションへ変換。
 ## For User(EN)
 1. Add Incoming Webhook at Slack Channel.
 1. Change mention_list.json.
