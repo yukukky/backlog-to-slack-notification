@@ -15,6 +15,7 @@ BacklogのメンションをSlackのメンションへ変換。
 1. deploy GCP Cloud Function.
     1. set trigger type `HTTP`.
     1. Set the environment variable `SLACK_WEBHOOK_URL` to the Incoming Webhook URL.
+    1. Set the environment variable `BACKLOG_ORG_URL` to the backlog organization URL.
     1. deploy main.py, mention_list.json, requirements.txt
 1. Set Backlog Workspace Webhook.
     1. set GCP Cloud Functions URL.
@@ -28,6 +29,7 @@ BacklogのメンションをSlackのメンションへ変換。
 1. GCPのCloud Functionsにデプロイ（Python3.9）
     1. トリガーのタイプはHTTP
     1. 環境変数 `SLACK_WEBHOOK_URL` にIncoming Webhook URLをセット
+    1. 環境変数 `BACKLOG_ORG_URL` 組織URLをセット
     1. main.py, mention_list.json, requirements.txtをデプロイ
 1. プロジェクト設定＞インテグレーション＞Webhookを設定
     1. WebHook URLにCloud Functionsで発行されたURLをセット

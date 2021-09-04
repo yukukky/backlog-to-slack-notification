@@ -20,7 +20,7 @@ def index(request):
     project_name = request_json["project"]["name"]
     project_key = request_json["project"]["projectKey"]
     content_key_id = request_json["content"]["key_id"]
-    url = f"https://{project_name}.backlog.com/view/{project_key}-{content_key_id}"
+    url = f"{os.environ["BACKLOG_ORG_URL"]}/view/{project_key}-{content_key_id}"
     mentionList = getMentionList(request_notifications)
     message = " ".join(mentionList) + " Notification from " + url
 
